@@ -30,3 +30,8 @@ C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.
 C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\SalesWebApp.dll
 C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\SalesWebApp.pdb
 C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\SalesWebApp.csproj.CopyComplete
+C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Create.g.cshtml.cs
+C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Delete.g.cshtml.cs
+C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Details.g.cshtml.cs
+C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Edit.g.cshtml.cs
+C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.g.cshtml.cs
