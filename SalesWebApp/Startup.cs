@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SalesWebApp.Data;
 using SalesWebMvc.Data;
+using SalesWebApp.Services;
 
 namespace SalesWebApp
 {
@@ -42,6 +43,8 @@ namespace SalesWebApp
                     builder => builder.MigrationsAssembly("SalesWebApp")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
+            services.AddScoped<DepartmentService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
