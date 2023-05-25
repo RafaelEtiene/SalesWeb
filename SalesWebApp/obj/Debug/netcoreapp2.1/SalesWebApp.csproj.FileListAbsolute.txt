@@ -38,3 +38,5 @@ C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.
 C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Index.g.cshtml.cs
 C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Create.g.cshtml.cs
 C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Delete.g.cshtml.cs
+C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Details.g.cshtml.cs
+C:\Users\Rafiusk\workspace\cSharp\SalesWebApp\SalesWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Edit.g.cshtml.cs

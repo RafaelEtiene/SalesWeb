@@ -2,6 +2,8 @@
 using SalesWebApp.Models;
 using SalesWebApp.Models.ViewModel;
 using SalesWebApp.Services;
+using SalesWebApp.Services.Exceptions;
+using System.Collections.Generic;
 
 namespace SalesWebApp.Controllers
 {
@@ -48,7 +50,8 @@ namespace SalesWebApp.Controllers
                 return NotFound();
 
             return View(seller)
-;        }
+;
+        }
 
 
         [HttpPost]
@@ -57,6 +60,60 @@ namespace SalesWebApp.Controllers
         {
             _sellerService.Remove(id);
             return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Details(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var seller = _sellerService.FindById(id.Value);
+
+            if (seller == null)
+                return NotFound();
+
+            return View(seller);
+        }
+
+        public IActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var validSeller = _sellerService.FindById(id.Value);
+            if (validSeller == null)
+            {
+                return NotFound();
+            }
+
+            List<Department> departments = _departmentService.FindAll();
+            SellerFormViewModel viewModel = new SellerFormViewModel { Seller = validSeller, Departments = departments };
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int id, Seller seller)
+        {
+            if (id != seller.Id)
+            {
+                return BadRequest();
+            }
+            try
+            {
+                _sellerService.Update(seller);
+                return RedirectToAction(nameof(Index));
+            }
+            catch (NotFoundException)
+            {
+                return NotFound();
+            }
+            catch (DbConcurrencyException)
+            {
+                return BadRequest();
+            }
+
         }
     }
 }
